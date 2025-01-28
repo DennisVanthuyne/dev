@@ -1,0 +1,593 @@
+maxxfan_off:
+  alias: Maxxfan_off
+  sequence:
+  - action: remote.send_command
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: 'off'
+  description: Sends IR off command to maxxfan
+  icon: mdi:fan-off
+maxxfan_on:
+  alias: Maxxfan_on
+  sequence:
+  - action: remote.send_command
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: 'on'
+  description: Turns Maxxfan on
+  icon: mdi:fan
+air_in_10:
+  alias: Air_in_10
+  sequence:
+  - action: remote.send_command
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_10%
+  description: Air in 10% lid open
+air_in_20:
+  alias: Air_in_20
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_20%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 20% open lid
+air_in_30:
+  alias: Air_in_30
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_30%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 30% open lid
+air_in_40:
+  alias: Air_in_40
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_40%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 40% open lid
+air_in_50:
+  alias: Air_in_50
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_50%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 50% open lid
+air_in_60:
+  alias: Air_in_60
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_60%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 60% open lid
+air_in_70:
+  alias: Air_in_70
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_70%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 70% open lid
+air_in_80:
+  alias: Air_in_80
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_80%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 80% open lid
+air_in_90:
+  alias: Air_in_90
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_90%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 90% open lid
+air_in_100:
+  alias: Air_in_100
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_in_100%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 100% open lid
+air_out_10:
+  alias: Air_out_10
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_10%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 10% open lid
+air_out_20:
+  alias: Air_out_20
+  sequence:
+  - alias: Air Out 20% open lid
+    action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_20%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 20% open lid
+air_out_30:
+  alias: Air_out_30
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_30%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 30% open lid
+air_out_40:
+  alias: Air_out_40
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_40%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 40% open lid
+air_out_50:
+  alias: Air_out_50
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_50%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 50% open lid
+air_out_60:
+  alias: Air_out_60
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_60%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 60% open lid
+air_out_70:
+  alias: Air_out_70
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_70%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 70% open lid
+air_out_80:
+  alias: Air_out_80
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_80%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 80% open lid
+air_out_90:
+  alias: Air_out_90
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_90%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 90% open lid
+air_out_100:
+  alias: Air_out_100
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Air_out_100%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air Out 100% open lid
+ceiling_fan_in_10:
+  alias: Ceiling_fan_in_10
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_10%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 10% closed lid
+ceiling_fan_in_20:
+  alias: Ceiling_fan_in_20
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_20%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 20% closed lid
+ceiling_fan_in_30:
+  alias: Ceiling_fan_in_30
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_30%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 30% closed lid
+ceiling_fan_in_40:
+  alias: Ceiling_fan_in_40
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_40%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air In 40% closed lid
+ceiling_fan_in_50:
+  alias: Ceiling_fan_in_50
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_50%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 50% closed lid
+ceiling_fan_in_60:
+  alias: Ceiling_fan_in_60
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_60%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 60% closed lid
+ceiling_fan_in_70:
+  alias: Ceiling_fan_in_70
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_70%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 70% closed lid
+ceiling_fan_in_80:
+  alias: Ceiling_fan_in_80
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_80%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 80% closed lid
+ceiling_fan_in_90:
+  alias: Ceiling_fan_in_90
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_90%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 90% closed lid
+ceiling_fan_in_100:
+  alias: Ceiling_fan_in_100
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_in_100%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air in 100% closed lid
+ceiling_fan_out_10:
+  alias: Ceiling_fan_out_10
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_10%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 10% closed lid
+ceiling_fan_out_20:
+  alias: Ceiling_fan_out_20
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_20%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 20% closed lid
+ceiling_fan_out_30:
+  alias: Ceiling_fan_out_30
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_30%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 30% closed lid
+ceiling_fan_out_40:
+  alias: Ceiling_fan_out_40
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_40%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 40% closed lid
+ceiling_fan_out_50:
+  alias: Ceiling_fan_out_50
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_50%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 50% closed lid
+ceiling_fan_out_60:
+  alias: Ceiling_fan_out_60
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_60%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 60% closed lid
+ceiling_fan_out_70:
+  alias: Ceiling_fan_out_70
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_70%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 70% closed lid
+ceiling_fan_out_80:
+  alias: Ceiling_fan_out_80
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_80%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 80% closed lid
+ceiling_fan_out_90:
+  alias: Ceiling_fan_out_90
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_90%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 90% closed lid
+ceiling_fan_out_100:
+  alias: Ceiling_fan_out_100
+  sequence:
+  - action: remote.send_command
+    metadata: {}
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: maxxfan
+      command: Ceiling_fan_out_100%
+    target:
+      device_id: 5f0fb776502a4acda0149ccc632cd174
+  description: Air out 100% closed lid
+set_fan_speed:
+  alias: Set Fan Speed
+  sequence:
+  - action: script.execute
+  description: change maxxfan speed

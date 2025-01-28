@@ -1,0 +1,53 @@
+- id: '1698522355495'
+  alias: Mercedes Me reload
+  description: ''
+  triggers:
+  - trigger: time_pattern
+    minutes: '15'
+  conditions: []
+  actions:
+  - action: homeassistant.update_entity
+    data:
+      entity_id:
+      - update.mercedesme_2020_update
+  mode: single
+- alias: Control MaxxFan
+  trigger:
+  - platform: state
+    entity_id:
+    - input_select.maxxfan_air_direction
+    - input_select.maxxfan_lid
+    - input_number.maxxfan_speed
+  action:
+  - variables:
+      lid_state: '{{ states(''input_select.maxxfan_lid'') | lower }}'
+      air_direction: "{% if states('input_select.maxxfan_air_direction') == 'Air In'
+        %}\n  in\n{% elif states('input_select.maxxfan_air_direction') == 'Air Out'
+        %}\n  out\n{% endif %}\n"
+      speed: '{{ states(''input_number.maxxfan_speed'') | int }}'
+      script_name: "{% if lid_state == 'open' %}\n  script.air_{{ air_direction }}_{{
+        speed }}\n{% elif lid_state == 'closed' %}\n  script.ceiling_fan_{{ air_direction
+        }}_{{ speed }}\n{% endif %}\n"
+  - service: script.turn_on
+    data:
+      entity_id: '{{ script_name }}'
+  - service: persistent_notification.create
+    data:
+      title: MaxxFan Automation
+      message: 'Triggered script: {{ script_name }}'
+  id: 0029ec119fa7423e911dc2714a342735
+- id: '1732704160991'
+
+
+  alias: Reload Mercedes Me Integration
+  trigger:
+  - platform: time_pattern
+    minutes: "/15"
+  action:
+  - service: homeassistant.reload_config_entry
+    data:
+      entry_id: "01JCXS2CM3DBP2F30AC1QAZYJK"
+  mode: single
+
+
+
